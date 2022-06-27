@@ -8,6 +8,6 @@ metadata:
 spec:
   rsync:
     serviceType: LoadBalancer
-    copyMethod: Clone 
+    copyMethod: Snapshot 
     destinationPVC: uploader-pvc
     sshKeys: scribe-key

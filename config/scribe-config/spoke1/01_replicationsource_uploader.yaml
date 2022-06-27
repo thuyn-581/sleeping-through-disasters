@@ -11,5 +11,5 @@ spec:
     schedule: "*/2 * * * *"
   rsync:
     sshKeys: scribe-key
-    address: 
-    copyMethod: Clone
+    address: a5fffb912c76e41678a8a858e6c480d6-9dc251a918d99ade.elb.us-east-1.amazonaws.com
+    copyMethod: Snapshot
