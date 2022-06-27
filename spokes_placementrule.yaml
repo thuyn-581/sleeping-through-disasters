@@ -12,5 +12,5 @@ spec:
     - key: name
       operator: In
       values:
-      - "spoke1"
-      - "spoke2"
+      - "s1-aws-tn"
+      - "s2-aws-tn"
