@@ -7,7 +7,7 @@ metadata:
     argocd.argoproj.io/sync-wave: "1"
 spec:
   rsync:
-    serviceType: ClusterIP
-    copyMethod: None 
+    serviceType: LoadBalancer
+    copyMethod: Clone 
     destinationPVC: uploader-pvc
     sshKeys: scribe-key
