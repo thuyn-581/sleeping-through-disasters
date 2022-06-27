@@ -1,10 +1,10 @@
 apiVersion: apps.open-cluster-management.io/v1
 kind: Subscription
 metadata:
-  name: scribe-configs-spoke2-subscription
+  name: volsync-configs-spoke2-subscription
   namespace: rhacm-apps
   labels:
-    app: scribe-configs-spoke2
+    app: volsync-configs-spoke2
   annotations:
     apps.open-cluster-management.io/git-path: config/scribe-config/spoke2
     apps.open-cluster-management.io/git-branch: base-config
