@@ -1,0 +1,16 @@
+apiVersion: apps.open-cluster-management.io/v1
+kind: Subscription
+metadata:
+  name: volsync-configs-spoke1-subscription
+  namespace: rhacm-apps
+  labels:
+    app: volsync-configs-spoke1
+  annotations:
+    apps.open-cluster-management.io/git-path: config/scribe-config/spoke1
+    apps.open-cluster-management.io/git-branch: base-config
+spec:
+  channel: rhacm-apps/sleeping-through-disasters
+  placement:
+    placementRef:
+      kind: PlacementRule
+      name: spoke1

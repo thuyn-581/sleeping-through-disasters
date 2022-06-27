@@ -5,4 +5,4 @@ metadata:
   namespace: rhacm-apps
 spec:
   type: Git
-  pathname: https://github.com/mvazquezc/sleeping-through-disasters.git
+  pathname: https://github.com/thuyn-581/sleeping-through-disasters.git
