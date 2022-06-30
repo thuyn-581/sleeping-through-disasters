@@ -10,6 +10,6 @@ spec:
   trigger:
     schedule: "*/2 * * * *"
   rsync:
-    sshKeys: scribe-key
-    address: volsync-rsync-dst-uploader-pvc.uploader-app.svc.clusterset.local
+    # sshKeys: scribe-key
+    address: volsync-rsync-dst-uploader-pvc.rhacm-apps.svc.clusterset.local
     copyMethod: Snapshot

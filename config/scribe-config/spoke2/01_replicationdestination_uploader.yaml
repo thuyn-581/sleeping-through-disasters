@@ -10,4 +10,4 @@ spec:
     serviceType: ClusterIP
     copyMethod: Snapshot 
     destinationPVC: uploader-pvc
-    sshKeys: scribe-key
+    # sshKeys: scribe-key
