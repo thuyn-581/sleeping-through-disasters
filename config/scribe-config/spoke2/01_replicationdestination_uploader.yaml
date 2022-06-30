@@ -8,6 +8,7 @@ metadata:
 spec:
   rsync:
     serviceType: ClusterIP
+    accessModes: ["ReadWriteOnce"]
     copyMethod: Snapshot 
     destinationPVC: uploader-pvc
-    # sshKeys: scribe-key
+    sshKeys: scribe-key
