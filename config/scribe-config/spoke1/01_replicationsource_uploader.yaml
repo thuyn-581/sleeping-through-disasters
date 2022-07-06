@@ -13,4 +13,5 @@ spec:
     sshKeys: scribe-key
     address: volsync-rsync-dst-uploader-pvc.rhacm-apps.svc.clusterset.local
     copyMethod: Snapshot
-    accessModes: ["ReadWriteOnce"]
+    storageClassName: gp2-csi
+    volumeSnapshotClassName: csi-aws-vsc
