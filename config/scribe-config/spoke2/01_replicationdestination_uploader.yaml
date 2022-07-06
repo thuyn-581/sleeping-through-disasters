@@ -2,7 +2,7 @@ apiVersion: volsync.backube/v1alpha1
 kind: ReplicationDestination
 metadata:
   name: uploader-pvc 
-  namespace: uploader-app
+  namespace: rhacm-apps
   annotations:
     argocd.argoproj.io/sync-wave: "1"
 spec:

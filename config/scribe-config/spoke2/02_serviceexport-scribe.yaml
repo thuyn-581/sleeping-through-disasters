@@ -2,6 +2,6 @@ apiVersion: multicluster.x-k8s.io/v1alpha1
 kind: ServiceExport
 metadata:
   name: volsync-rsync-dst-uploader-pvc
-  namespace: uploader-app
+  namespace: rhacm-apps
   annotations:
     argocd.argoproj.io/sync-wave: "2"
