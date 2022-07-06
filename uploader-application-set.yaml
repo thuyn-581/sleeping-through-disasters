@@ -8,17 +8,19 @@ spec:
   generators:
   - list:
       elements:
-      - cluster: cluster-eu
-        url: https://api.eu-cluster.03ac.sandbox1106.opentlc.com:6443
-      - cluster: cluster-us
-        url: https://api.us-cluster.03ac.sandbox1106.opentlc.com:6443
+      - cluster: spoke1
+        url: https://api.s1-aws-tn.dev09.red-chesterfield.com:6443
+      - cluster: spoke2
+        url: https://api.s2-aws-tn.dev09.red-chesterfield.com:6443
   template:
     metadata:
       name: '{{cluster}}-uploader'
+      labels:
+        velero.io/exclude-from-backup: "true"
     spec:
       project: default
       source:
-        repoURL: https://github.com/mvazquezc/sleeping-through-disasters.git
+        repoURL: https://github.com/thuyn-581/sleeping-through-disasters.git
         targetRevision: base-config
         path: config/web-app
       syncPolicy:
@@ -27,7 +29,7 @@ spec:
           prune: false
         syncOptions:
         - Validate=true
-        - CreateNamespace=false
+        - CreateNamespace=true
         retry:
           limit: 5
           backoff:
@@ -36,4 +38,4 @@ spec:
             maxDuration: 3m
       destination:
         server: '{{url}}'
-        namespace: uploader-app
+        namespace: rhacm-apps
