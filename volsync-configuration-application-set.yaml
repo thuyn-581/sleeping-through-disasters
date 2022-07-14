@@ -38,4 +38,4 @@ spec:
             maxDuration: 3m
       destination:
         server: '{{url}}'
-        namespace: rhacm-apps
+        namespace: uploader-application-set-ns
