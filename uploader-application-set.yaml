@@ -9,9 +9,9 @@ spec:
   - list:
       elements:
       - cluster: spoke1
-        url: https://api.s1-aws-tn.dev09.red-chesterfield.com:6443
+        url: https://api.s1-gcp-tn.gcp.dev09.red-chesterfield.com:6443
       - cluster: spoke2
-        url: https://api.s2-aws-tn.dev09.red-chesterfield.com:6443
+        url: https://api.s2-az-tn.az.dev06.red-chesterfield.com:6443
   template:
     metadata:
       name: '{{cluster}}-uploader'
