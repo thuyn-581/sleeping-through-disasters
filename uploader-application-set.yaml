@@ -38,4 +38,4 @@ spec:
             maxDuration: 3m
       destination:
         server: '{{url}}'
-        namespace: uploader-application-set-ns
+        namespace: uploader-app
